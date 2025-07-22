@@ -7,6 +7,7 @@
 // @version 0.0.01
 // @include http://eromanga-ace.com/*
 // @include http://blog.livedoor.jp/uwasainfo/*
+// @include http://eromanga-pon.com/*
 // @require jquery
 // @history 0.0.1 	Initial version.
 // @history:ja 0.0.1	最初のバージョン
