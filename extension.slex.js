@@ -27,3 +27,11 @@ if (/blog\.livedoor\.jp\/uwasainfo/.test(location.href)){
   /*alert('call');*/
   $("a[href^='https://i.imgur.com/']").attr("target","_blank").attr("rel","noopener noreferrer");
 }
+if (/eromanga-pon\.com/.test(location.href)){
+  function removeads() {
+    $('div[class="ad_big"]').remove();
+    $('div[id^="active_overlay"]').remove();
+  }
+  removeads();
+  setInterval(removeads, 1000);
+}
