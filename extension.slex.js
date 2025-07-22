@@ -32,7 +32,7 @@ if (/eromanga-pon\.com/.test(location.href)){
   function removeads() {
     $('div[class="ad_big"]').remove();
     $('div[id^="active_overlay"]').remove();
-    $('div[id^="inst_area"]').remove();
+    $('div[id^="close_"]').click();
   }
   removeads();
   setInterval(removeads, 1000);
