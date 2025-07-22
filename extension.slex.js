@@ -8,6 +8,7 @@
 // @include http://eromanga-ace.com/*
 // @include http://blog.livedoor.jp/uwasainfo/*
 // @include https://eromanga-pon.com/*
+// @include https://nanjmuseum.com/*
 // @require jquery
 // @history 0.0.1 	Initial version.
 // @history:ja 0.0.1	最初のバージョン
@@ -33,6 +34,14 @@ if (/eromanga-pon\.com/.test(location.href)){
     $('div[class="ad_big"]').remove();
     $('div[id^="active_overlay"]').remove();
     $('div[id^="close_"]').click();
+  }
+  removeads();
+  setInterval(removeads, 1000);
+}
+if (/nanjmuseum\.com/.test(location.href)){
+  function removeads() {
+    $('div[id="st-header-under-widgets-box-wrap"]').remove();
+    $('div[id^="st_custom_html_ad"]').remove();
   }
   removeads();
   setInterval(removeads, 1000);
